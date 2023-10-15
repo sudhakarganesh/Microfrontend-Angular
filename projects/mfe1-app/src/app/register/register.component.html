@@ -1,0 +1,12 @@
+<form (ngSubmit)="registerUser()" class="user-form">
+  <label for="firstname">First Name:</label>
+  <input type="text" id="firstname" name="firstname" [(ngModel)]="user.firstname" required>
+
+  <label for="lastname">Last Name:</label>
+  <input type="text" id="lastname" name="lastname" [(ngModel)]="user.lastname" required>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" [(ngModel)]="user.email" required>
+
+  <button type="submit" class="submit-button">Submit</button>
+</form>
